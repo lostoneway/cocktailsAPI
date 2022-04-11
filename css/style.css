@@ -1,0 +1,98 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+body{
+  background-image: url('../img/patrick-tomasso-GXXYkSwndP4-unsplash.jpg');
+  min-height: 100%; 
+  min-width: 1024px; 
+  width: 100%; 
+  height: auto; 
+  position: fixed;
+  top: 0;
+  left: 0; 
+}
+
+.page{
+  display: flex; 
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  /* border: 3px solid magenta; */
+
+}
+header, section{
+  width: 100%;
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  color: #46BCDE; 
+  height: 80px; 
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  
+}
+.content {
+  font-family: 'Roboto Mono', monospace;
+  text-align: center;
+  height: auto;
+}
+
+.arrows{
+  display: flex; 
+  color:#52D273;
+  font-size: 1.2em;
+  justify-content: space-between;
+}
+img{
+  display: block;
+  margin: 0 auto;
+  height: 200px; 
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+.fa-champagne-glasses {
+  color: gold; 
+}
+
+section h2{
+  color:#52D273; 
+  font-size: 1.5em;
+}
+
+section p{  
+  color: #E5C454; 
+  font-size: 1.5em;
+  font-weight:700;
+  line-height: 1.25em;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+}
+
+/******************************************
+/* Media Queries
+/*******************************************/
+@media screen and (min-width:961px){
+  .page{
+    width: 960px;
+    margin: 0 auto; 
+  }
+
+
+}
