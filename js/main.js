@@ -6,7 +6,7 @@ document.querySelector('button').addEventListener('click', getDrink)
 function getDrink(){
   //grab drink from input
   let drink = document.querySelector('input').value
-
+.toLowerCase()
   fetch(`https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${drink}`)
     .then(res => res.json()) // parse response as JSON
     .then(data => {
