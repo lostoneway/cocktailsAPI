@@ -40,3 +40,4 @@ function refresh(drinks){
     counter++; 
   },2500)
 }
+
